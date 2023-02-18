@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script defer src="signin.js"></script>
+    <script defer src="signup.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="signin">
+        <input type="text" class="signin-id" />
+        <p class="signin-id-text"></p>
+        <input type="text" class="signin-pw" />
+        <p class="signin-pw-text"></p>
+        <input type="signin-text" class="signin-pw-check" />
+        <p class="signin-pw-check-text"></p>
+      </form>
+
+      <form action="" class="signup">
+        <!-- style="display: none" -->
+        <input type="text" class="signup-name" placeholder="Your Name" />
+        <p class="signup-name-text"></p>
+        <input type="text" class="signup-user-name" placeholder="User Name" />
+        <p class="signup-user-name-text"></p>
+        <input type="text" class="signup-id" placeholder="Id" />
+        <p class="signup-id-text"></p>
+        <input type="text" class="signup-pw" placeholder="Password" />
+        <p class="signup-pw-text"></p>
+        <input
+          type="text"
+          class="signup-pw-check"
+          placeholder="Password Check"
+        />
+        <p class="signup-pw-check-text"></p>
+        <p>
+          id는 영어로 시작해야 하고 숫자와 영어를 혼합한 4자리에서 7자리여야
+          합니다
+        </p>
+      </form>
+
+      <div class="button">
+        <input type="button" class="signin-button" value="로그인" />
+        <input type="button" class="signup-button" value="회원가입" />
+      </div>
+    </div>
+  </body>
+</html>
