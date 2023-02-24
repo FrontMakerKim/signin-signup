@@ -17,15 +17,15 @@ const SignupText = (value, reg, text) => {
   }
 };
 
-//signup-name
-const $signupName = document.querySelector(".signup-name");
-const $signupNameText = document.querySelector(".signup-name-text");
+// //signup-name
+// const $signupName = document.querySelector(".signup-name");
+// const $signupNameText = document.querySelector(".signup-name-text");
 
-$signupName.addEventListener("focusout", (e) => {
-  const nameCurrentValue = e.target.value;
-  const nameRegTest = SigninRegTest(nameCurrentValue);
-  SignupText(nameCurrentValue, nameRegTest, $signupNameText);
-});
+// $signupName.addEventListener("focusout", (e) => {
+//   const nameCurrentValue = e.target.value;
+//   const nameRegTest = SigninRegTest(nameCurrentValue);
+//   SignupText(nameCurrentValue, nameRegTest, $signupNameText);
+// });
 
 //signup-userName
 const $signupUserName = document.querySelector(".signup-user-name");

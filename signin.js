@@ -1,6 +1,6 @@
 //페이지 바뀔떄 포커스 되기 위한 dom
 const $signinId = document.querySelector(".signin-id");
-const $signup = document.querySelector(".signup-name");
+const $signup = document.querySelector(".signup-user-name");
 
 //load시 id에 포커스
 window.addEventListener("load", (e) => {
@@ -26,7 +26,11 @@ $signinBtn.addEventListener("mousedown", () => {
 
   setTimeout(() => {
     $signinId.focus();
-    $signupNameText.textContent = "";
+    // $signupNameText.textContent = "";
+    $signupUserNameText.textContent = "";
+    $signupIdText.textContent = "";
+    $signupPwText.textContent = "";
+    $signupPwCheckText.textContent = "";
   }, 50);
 });
 
@@ -36,6 +40,8 @@ $signupBtn.addEventListener("mousedown", () => {
   setTimeout(() => {
     $signup.focus();
     $signinIdText.textContent = "";
+    $signinPwText.textContent = "";
+    $signinPwCheckText.textContent = "";
   }, 50);
 });
 
