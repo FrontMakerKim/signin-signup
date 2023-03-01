@@ -9,29 +9,42 @@
     <script defer src="signup.js"></script>
     <script defer src="signin.js"></script>
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="form-box">
+        <h1 class="title">SIGN IN</h1>
         <form action="" class="signin">
           <div class="input-field">
+            <span class="material-symbols-outlined"> mail </span>
             <input type="text" class="signin-id" placeholder="Id" />
           </div>
           <p class="signin-id-text"></p>
 
           <div class="input-field">
+            <span class="material-symbols-outlined"> lock </span>
             <input type="text" class="signin-pw" placeholder="Password" />
           </div>
           <p class="signin-pw-text"></p>
 
-          <div class="input-field">
-            <input
-              type="signin-text"
-              class="signin-pw-check"
-              placeholder="Password Check"
-            />
+          <div class="find">
+            <a href="">
+              <h4>아이디 찾기/</h4>
+            </a>
+            <a href="">
+              <h4>비밀번호 찾기</h4>
+            </a>
           </div>
-          <p class="signin-pw-check-text"></p>
         </form>
 
         <form action="" class="signup" style="display: none">
@@ -42,6 +55,7 @@
 
           <p class="signup-name-text"></p> -->
           <div class="input-field">
+            <span class="material-symbols-outlined"> person </span>
             <input
               type="text"
               class="signup-user-name"
@@ -51,17 +65,21 @@
 
           <p class="signup-user-name-text"></p>
           <div class="input-field">
+            <span class="material-symbols-outlined"> mail </span>
+
             <input type="text" class="signup-id" placeholder="Id" />
           </div>
 
           <p class="signup-id-text"></p>
           <div class="input-field">
+            <span class="material-symbols-outlined"> lock </span>
             <input type="text" class="signup-pw" placeholder="Password" />
           </div>
 
           <p class="signup-pw-text"></p>
 
           <div class="input-field">
+            <span class="material-symbols-outlined"> done </span>
             <input
               type="text"
               class="signup-pw-check"

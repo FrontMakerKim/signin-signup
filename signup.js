@@ -10,9 +10,9 @@ const SignupText = (value, reg, text) => {
     text.textContent = "";
   } else {
     if (value.length === 0) {
-      text.textContent = "입력해라";
+      text.textContent = "입력하세요";
     } else {
-      text.textContent = "문법맞춰라";
+      text.textContent = "영어, 숫자를 사용해주세요";
     }
   }
 };
@@ -64,10 +64,10 @@ const $signupPwCheckText = document.querySelector(".signup-pw-check-text");
 $signupPwCheck.addEventListener("focusout", (e) => {
   const pwCheckCurrentValue = e.target.value;
   if (pwCheckCurrentValue.length === 0) {
-    $signupPwCheckText.textContent = "입력해라";
+    $signupPwCheckText.textContent = "입력하세요";
   } else if ($signinPw.value === pwCheckCurrentValue) {
     $signupPwCheckText.textContent = "";
   } else {
-    $signupPwCheckText.textContent = "비밀번호 다름";
+    $signupPwCheckText.textContent = "비밀번호가 다릅니다";
   }
 });

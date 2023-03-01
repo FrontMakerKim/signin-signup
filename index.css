@@ -1,10 +1,18 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  background-image: url("https://img.freepik.com/premium-photo/abstract-blurred-gold-and-orange-illuminated-city-lights-for-background-or-wallpaper_76000-3699.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.89;
+}
+
 .container {
   width: 100%;
   height: 100vh;
-  background-color: gray;
+  /* background-color: gray; */
   background-position: center;
   background-size: cover;
   position: relative;
@@ -26,7 +34,7 @@
   background-color: antiquewhite;
   margin: 15px 0;
   border-radius: 3px;
-  /* display: flex; */
+  display: flex;
   align-items: center;
 }
 
@@ -42,7 +50,7 @@ form {
   height: 350px;
 }
 
-p {
+form p {
   font-size: 14px;
   height: 5px;
   line-height: 1px;
@@ -52,6 +60,7 @@ p {
 .button {
   display: flex;
 }
+
 .btn-field {
   width: 100%;
   display: flex;
@@ -59,8 +68,9 @@ p {
 }
 
 .btn-field button {
-  background-color: aqua;
-  color: azure;
+  background-color: orange;
+  color: black;
+  font-weight: bold;
   height: 40px;
   width: 90%;
   border-radius: 20px;
@@ -69,35 +79,41 @@ p {
   cursor: pointer;
   transition: background 1s;
 }
-/* .form-box {
-  border: 1px solid orange;
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
+
+span {
+  padding-left: 15px;
 }
 
-form {
-  height: 300px;
+.find {
+  display: flex;
+  justify-content: center;
 }
 
-.button {
-  display: inline;
+.title {
+  color: orange;
+  font-size: 40px;
+  font-family: "Tilt Warp", cursive;
+  font-weight: 900;
+  text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+  padding-bottom: 12px;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
 }
 
-p {
-  height: 18px;
-  top: 0px;
-  bottom: 0px;
-  margin: auto 0px;
-  font-size: 13px;
+.signin p {
+  color: red;
+  font-family: fantasy;
 }
 
-input {
-  width: 40;
+.signup p {
+  color: red;
 }
 
-.worry {
-  border-color: red;
-} */
+a {
+  text-decoration: none;
+}
+
+h4 {
+  color: black;
+}
