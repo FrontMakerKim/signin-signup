@@ -27,11 +27,14 @@ $signinBtn.addEventListener("mousedown", () => {
 
   setTimeout(() => {
     $signinId.focus();
-    // $signupNameText.textContent = "";
     $signupUserNameText.textContent = "";
     $signupIdText.textContent = "";
     $signupPwText.textContent = "";
     $signupPwCheckText.textContent = "";
+    $signupUserName.value = "";
+    $signupId.value = "";
+    $signupPw.value = "";
+    $signupPwCheck.value = "";
   }, 50);
 });
 
@@ -44,12 +47,12 @@ $signupBtn.addEventListener("mousedown", () => {
     $signup.focus();
     $signinIdText.textContent = "";
     $signinPwText.textContent = "";
-    // $signinPwCheckText.textContent = "";
+    $signinId.value = "";
+    $signinPw.value = "";
   }, 50);
 });
 
 //signin text출력
-
 const SigninText = (value, reg, text) => {
   if (reg === true) {
     text.textContent = "";
@@ -80,18 +83,3 @@ $signinPw.addEventListener("focusout", (e) => {
   const pwRegTest = SigninRegTest(pwCurrentValue);
   SigninText(pwCurrentValue, pwRegTest, $signinPwText);
 });
-
-//signin-pwcheck
-// const $signinPwCheck = document.querySelector(".signin-pw-check");
-// const $signinPwCheckText = document.querySelector(".signin-pw-check-text");
-
-// $signinPwCheck.addEventListener("focusout", (e) => {
-//   const pwCheckCurrentValue = e.target.value;
-//   if (pwCheckCurrentValue.length === 0) {
-//     $signinPwCheckText.textContent = "입력하세요";
-//   } else if ($signinPw.value === pwCheckCurrentValue) {
-//     $signinPwCheckText.textContent = "";
-//   } else {
-//     $signinPwCheckText.textContent = "비밀번호가";
-//   }
-// });

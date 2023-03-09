@@ -12,20 +12,10 @@ const SignupText = (value, reg, text) => {
     if (value.length === 0) {
       text.textContent = "입력하세요";
     } else {
-      text.textContent = "영어, 숫자를 사용해주세요";
+      text.textContent = "영어, 숫자 조합으로 4-7자리를 입력해주세요";
     }
   }
 };
-
-// //signup-name
-// const $signupName = document.querySelector(".signup-name");
-// const $signupNameText = document.querySelector(".signup-name-text");
-
-// $signupName.addEventListener("focusout", (e) => {
-//   const nameCurrentValue = e.target.value;
-//   const nameRegTest = SigninRegTest(nameCurrentValue);
-//   SignupText(nameCurrentValue, nameRegTest, $signupNameText);
-// });
 
 //signup-userName
 const $signupUserName = document.querySelector(".signup-user-name");
@@ -33,7 +23,7 @@ const $signupUserNameText = document.querySelector(".signup-user-name-text");
 
 $signupUserName.addEventListener("focusout", (e) => {
   const userNameCurrentValue = e.target.value;
-  const userNameRegTest = SigninRegTest(userNameCurrentValue);
+  const userNameRegTest = SignupRegTest(userNameCurrentValue);
   SignupText(userNameCurrentValue, userNameRegTest, $signupUserNameText);
 });
 
@@ -43,7 +33,7 @@ const $signupIdText = document.querySelector(".signup-id-text");
 
 $signupId.addEventListener("focusout", (e) => {
   const idCurrentValue = e.target.value;
-  const idRegTest = SigninRegTest(idCurrentValue);
+  const idRegTest = SignupRegTest(idCurrentValue);
   SignupText(idCurrentValue, idRegTest, $signupIdText);
 });
 
@@ -53,7 +43,7 @@ const $signupPwText = document.querySelector(".signup-pw-text");
 
 $signupPw.addEventListener("focusout", (e) => {
   const pwCurrentValue = e.target.value;
-  const pwRegTest = SigninRegTest(pwCurrentValue);
+  const pwRegTest = SignupRegTest(pwCurrentValue);
   SignupText(pwCurrentValue, pwRegTest, $signupPwText);
 });
 
@@ -71,3 +61,13 @@ $signupPwCheck.addEventListener("focusout", (e) => {
     $signupPwCheckText.textContent = "비밀번호가 다릅니다";
   }
 });
+
+//signup-buttoncheck
+// const $signupBtn = document.querySelector(".signup-button");
+
+// $signupBtn.addEventListener("click", () => {
+//   $signupUserNameText = "";
+//   $signupIdText = "";
+//   $signupPwText = "";
+//   $signupPwCheckText = "";
+// });
