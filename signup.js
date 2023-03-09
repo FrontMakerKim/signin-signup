@@ -62,12 +62,24 @@ $signupPwCheck.addEventListener("focusout", (e) => {
   }
 });
 
-//signup-buttoncheck
-// const $signupBtn = document.querySelector(".signup-button");
+//signup-pw-see
+const $signupPwSee = document.querySelector(".signup-pw-see");
 
-// $signupBtn.addEventListener("click", () => {
-//   $signupUserNameText = "";
-//   $signupIdText = "";
-//   $signupPwText = "";
-//   $signupPwCheckText = "";
-// });
+$signupPwSee.addEventListener("mouseover", () => {
+  $signupPw.type = "text";
+});
+
+$signupPwSee.addEventListener("mouseout", () => {
+  $signupPw.type = "password";
+});
+
+//signin-pw-check-see
+const $signupPwCheckSee = document.querySelector(".signup-pw-check-see");
+
+$signupPwCheckSee.addEventListener("mouseover", () => {
+  $signupPwCheck.type = "text";
+});
+
+$signupPwCheckSee.addEventListener("mouseout", () => {
+  $signupPwCheck.type = "password";
+});

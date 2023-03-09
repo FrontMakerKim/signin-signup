@@ -83,3 +83,14 @@ $signinPw.addEventListener("focusout", (e) => {
   const pwRegTest = SigninRegTest(pwCurrentValue);
   SigninText(pwCurrentValue, pwRegTest, $signinPwText);
 });
+
+//signin-pw-see
+const $signinPwSee = document.querySelector(".signin-pw-see");
+
+$signinPwSee.addEventListener("mouseover", () => {
+  $signinPw.type = "text";
+});
+
+$signinPwSee.addEventListener("mouseout", () => {
+  $signinPw.type = "password";
+});
